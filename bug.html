@@ -1,0 +1,13 @@
+```html
+<div class="bg-gray-100 p-4">
+  <div class="flex items-center space-x-4">
+    <img src="/image.jpg" alt="Image" class="w-16 h-16 rounded-full">
+    <div>
+      <h2 class="text-xl font-bold">Profile</h2>
+      <p class="text-gray-600">User information</p>
+    </div>
+  </div>
+</div>
+```
+
+This code produces unexpected layout issues in certain scenarios because the image's aspect ratio is not considered when using `w-16` and `h-16`.  If the image is not perfectly square (16:16), it will be distorted.
